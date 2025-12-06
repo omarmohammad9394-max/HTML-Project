@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Order Confirmation</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <!-- LEFT — LOGO -->
+    <a href="index.html" class="nav-logo">
+        <img src="images/Logo.png" alt="PrimeVault">
+    </a>
+
+    <!-- CENTER — LINKS -->
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+    </nav>
+
+    <!-- RIGHT — USER + CART -->
+    <div class="nav-right">
+        <span id="nav-username" class="username"></span>
+
+        <div id="auth-buttons">
+            <a href="login.html" class="nav-btn">Login</a>
+            <a href="signup.html" class="nav-btn">Sign Up</a>
+        </div>
+
+        <div class="cart-icon" onclick="location.href='cart.html'">
+            <img src="images/Cart.png" alt="Cart">
+            <span id="cart-count">0</span>
+        </div>
+
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </div>
+
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="login.html" id="mobile-login">Login</a>
+    <a href="signup.html" id="mobile-signup">Sign Up</a>
+</div>
+
+
+<!-- CONFIRMATION CONTENT -->
+<div class="conf-container">  
+    <h1>Order Confirmed!</h1>
+    <p>Thank you for your purchase.</p>
+
+    <div class="order-box">
+        <h2>Your Confirmation ID:</h2>
+        <p id="ordernumber"></p>
+    </div>
+
+    <a href="receipt.html" class="btn" style="margin-top:15px;">View Receipt</a>
+    <a href="index.html" class="btn" style="margin-top:10px; background:#444;">Return to Home Page</a>
+</div>
+
+<!-- Scripts -->
+<script src="js/script.js"></script>
+<script>
+    // Navbar fix
+    loadNavbar();
+
+    // Load order number from lastOrder
+    const order = JSON.parse(localStorage.getItem("lastOrder"));
+    if (order && order.id) {
+        document.getElementById("ordernumber").textContent = order.id;
+    } else {
+        document.getElementById("ordernumber").textContent =
+            "PV" + Math.floor(10000 + Math.random() * 90000);
+    }
+
+    localStorage.removeItem("cart");
+</script>
+
+</body>
+</html>

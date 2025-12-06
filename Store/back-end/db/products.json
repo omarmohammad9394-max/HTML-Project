@@ -1,0 +1,280 @@
+{
+  "electronics": [
+    {
+      "id": 101,
+      "name": "Gaming Laptop Pro 15",
+      "price": 38999,
+      "img": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+      "desc": "High-performance gaming laptop with RTX graphics and 144Hz display.",
+      "rating": 5,
+      "reviews": []
+    },
+    {
+      "id": 102,
+      "name": "UltraSharp 4K Monitor 27”",
+      "price": 12999,
+      "img": "https://images.unsplash.com/photo-1587825140708-9c8df07cbf31",
+      "desc": "Crisp 4K resolution with HDR support and ultra-thin bezels.",
+      "rating": 4,
+      "reviews": []
+    },
+    {
+      "id": 103,
+      "name": "Wireless Noise-Canceling Headphones",
+      "price": 4999,
+      "img": "https://images.unsplash.com/photo-1519677100203-a0e668c92439",
+      "desc": "Premium ANC headphones with deep bass and 30-hour battery life.",
+      "rating": 5,
+      "reviews": []
+    },
+    {
+      "id": 104,
+      "name": "Smartphone X Elite",
+      "price": 21999,
+      "img": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+      "desc": "Flagship smartphone with AMOLED display and pro camera system.",
+      "rating": 5,
+      "reviews": []
+    },
+    {
+      "id": 105,
+      "name": "Bluetooth Home Speaker",
+      "price": 1799,
+      "img": "https://images.unsplash.com/photo-1585386959984-a41552231693",
+      "desc": "Crystal-clear sound with 360-degree bass enhancement.",
+      "rating": 4,
+      "reviews": []
+    },
+    {
+      "id": 106,
+      "name": "Smartwatch S9 Titanium",
+      "price": 7999,
+      "img": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+      "desc": "Track fitness, health, and messages with a luxury titanium finish.",
+      "rating": 5,
+      "reviews": []
+    },
+    {
+      "id": 107,
+      "name": "DSLR Camera ProShot 24MP",
+      "price": 14999,
+      "img": "https://images.unsplash.com/photo-1519183071298-a2962be90b8e",
+      "desc": "24-megapixel DSLR with fast autofocus and 4K video capture.",
+      "rating": 4,
+      "reviews": []
+    },
+    {
+      "id": 108,
+      "name": "Wireless Mechanical Keyboard",
+      "price": 2999,
+      "img": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?2",
+      "desc": "RGB backlit keys with brown tactile switches.",
+      "rating": 4,
+      "reviews": []
+    },
+    {
+      "id": 109,
+      "name": "Portable SSD 1TB",
+      "price": 2499,
+      "img": "https://images.unsplash.com/photo-1589156191108-c762ff4e8b1a",
+      "desc": "Ultra-fast USB-C SSD with 1050MB/s read speed.",
+      "rating": 5,
+      "reviews": []
+    },
+    {
+      "id": 110,
+      "name": "Drone AirLite 4K",
+      "price": 9999,
+      "img": "https://images.unsplash.com/photo-1508615070457-7baeba4003ab",
+      "desc": "Foldable camera drone with 4K stabilized video.",
+      "rating": 5,
+      "reviews": []
+    }
+  ],
+
+  "clothes": [
+    {
+      "id": 201,
+      "name": "Classic Black Hoodie",
+      "price": 699,
+      "img": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+      "desc": "Soft cotton hoodie with a minimalistic premium design.",
+      "rating": 5,
+      "reviews": []
+    },
+    {
+      "id": 202,
+      "name": "White Oversized T-Shirt",
+      "price": 299,
+      "img": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?2",
+      "desc": "Relaxed-fit tee made with breathable fabric.",
+      "rating": 4,
+      "reviews": []
+    },
+    {
+      "id": 203,
+      "name": "Men’s Slim Fit Jeans",
+      "price": 850,
+      "img": "https://images.unsplash.com/photo-1542272604-787c3835535d",
+      "desc": "Premium denim jeans designed for comfort and durability.",
+      "rating": 5,
+      "reviews": []
+    },
+    {
+      "id": 204,
+      "name": "Beige Winter Jacket",
+      "price": 1599,
+      "img": "https://images.unsplash.com/photo-1520975939577-4bf121074425",
+      "desc": "Warm insulated jacket perfect for cold seasons.",
+      "rating": 4,
+      "reviews": []
+    },
+    {
+      "id": 205,
+      "name": "Men’s Formal Shirt",
+      "price": 499,
+      "img": "https://images.unsplash.com/photo-1520975613477-bcf11f44bbc7",
+      "desc": "High-quality fabric with tailored slim fit.",
+      "rating": 4,
+      "reviews": []
+    },
+    {
+      "id": 206,
+      "name": "Women’s Floral Dress",
+      "price": 999,
+      "img": "https://images.unsplash.com/photo-1520975698519-59dedc1e7e96",
+      "desc": "Lightweight dress with elegant floral patterns.",
+      "rating": 5,
+      "reviews": []
+    },
+    {
+      "id": 207,
+      "name": "Athletic Running Shoes",
+      "price": 1199,
+      "img": "https://images.unsplash.com/photo-1528701800489-20be3c6e3a47",
+      "desc": "Performance shoes built for speed and comfort.",
+      "rating": 5,
+      "reviews": []
+    },
+    {
+      "id": 208,
+      "name": "Women’s Winter Coat",
+      "price": 1899,
+      "img": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f",
+      "desc": "Thick stylish winter coat with soft lining.",
+      "rating": 5,
+      "reviews": []
+    },
+    {
+      "id": 209,
+      "name": "Men’s Polo Shirt",
+      "price": 399,
+      "img": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?3",
+      "desc": "Breathable fabric with a classic polo design.",
+      "rating": 4,
+      "reviews": []
+    },
+    {
+      "id": 210,
+      "name": "Women’s Casual Sneakers",
+      "price": 899,
+      "img": "https://images.unsplash.com/photo-1528701800489-20be3c6e3a47?2",
+      "desc": "Comfortable sneakers perfect for everyday wear.",
+      "rating": 4,
+      "reviews": []
+    }
+  ],
+
+  "accessories": [
+    {
+      "id": 301,
+      "name": "Leather Wallet",
+      "price": 350,
+      "img": "https://images.unsplash.com/photo-1551650975-87deedd944c3",
+      "desc": "Premium handcrafted leather wallet.",
+      "rating": 5,
+      "reviews": []
+    },
+    {
+      "id": 302,
+      "name": "Aviator Sunglasses",
+      "price": 499,
+      "img": "https://images.unsplash.com/photo-1511497584788-876760111969",
+      "desc": "Classic aviator shades with UV protection.",
+      "rating": 4,
+      "reviews": []
+    },
+    {
+      "id": 303,
+      "name": "Bracelet Band",
+      "price": 199,
+      "img": "https://images.unsplash.com/photo-1522337660859-02fbefca4702",
+      "desc": "Stylish bracelet for casual and formal outfits.",
+      "rating": 4,
+      "reviews": []
+    },
+    {
+      "id": 304,
+      "name": "Premium Backpack",
+      "price": 899,
+      "img": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+      "desc": "Durable backpack with padded laptop compartment.",
+      "rating": 5,
+      "reviews": []
+    },
+    {
+      "id": 305,
+      "name": "Sports Water Bottle",
+      "price": 150,
+      "img": "https://images.unsplash.com/photo-1600185365483-26d7f1bb7a57",
+      "desc": "Stainless steel insulated bottle keeps drinks cold.",
+      "rating": 4,
+      "reviews": []
+    },
+    {
+      "id": 306,
+      "name": "Fashion Watch",
+      "price": 650,
+      "img": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?3",
+      "desc": "Modern analog watch with leather strap.",
+      "rating": 5,
+      "reviews": []
+    },
+    {
+      "id": 307,
+      "name": "Slim Laptop Sleeve",
+      "price": 299,
+      "img": "https://images.unsplash.com/photo-1578022761797-b9d85a211b6b",
+      "desc": "Water-resistant laptop sleeve with padding.",
+      "rating": 4,
+      "reviews": []
+    },
+    {
+      "id": 308,
+      "name": "Keychain Charm",
+      "price": 75,
+      "img": "https://images.unsplash.com/photo-1520095972714-909e527c1e0e",
+      "desc": "Cute accessory keychain charm.",
+      "rating": 4,
+      "reviews": []
+    },
+    {
+      "id": 309,
+      "name": "Fitness Tracker Band",
+      "price": 399,
+      "img": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528",
+      "desc": "Tracks steps, calories, and sleep cycles.",
+      "rating": 4,
+      "reviews": []
+    },
+    {
+      "id": 310,
+      "name": "Travel Organizer Pouch",
+      "price": 199,
+      "img": "https://images.unsplash.com/photo-1585386959984-a41552231693?2",
+      "desc": "Compact organizer for cables and accessories.",
+      "rating": 4,
+      "reviews": []
+    }
+  ]
+}

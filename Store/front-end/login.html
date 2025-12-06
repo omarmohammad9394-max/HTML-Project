@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <!-- LEFT — LOGO -->
+    <a href="index.html" class="nav-logo">
+        <img src="images/Logo.png" alt="PrimeVault">
+    </a>
+
+    <!-- CENTER — LINKS -->
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+    </nav>
+
+    <!-- RIGHT — USER + CART -->
+    <div class="nav-right">
+
+        <!-- Username appears dynamically -->
+        <span id="nav-username" class="username"></span>
+
+        <!-- Login + Signup (hidden when logged in) -->
+        <div id="auth-buttons">
+            <a href="login.html" class="nav-btn">Login</a>
+            <a href="signup.html" class="nav-btn">Sign Up</a>
+        </div>
+
+        <!-- CART ICON -->
+        <div class="cart-icon" onclick="location.href='cart.html'">
+            <img src="images/Cart.png" alt="Cart">
+            <span id="cart-count">0</span>
+        </div>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    </div>
+
+</header>
+
+<!-- MOBILE DROPDOWN MENU -->
+<div id="mobileMenu" class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="login.html" id="mobile-login">Login</a>
+    <a href="signup.html" id="mobile-signup">Sign Up</a>
+</div>
+<div class="auth-logo-box">
+    <img src="images/Logo.png" alt="PrimeVault Logo" class="auth-logo">
+</div>
+<div class="form-container">
+    <h2>Login</h2>
+
+    <input type="text" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+
+    <button class="btn" onclick="login()">Login</button>
+
+    <p style="text-align:center; margin-top:10px;">
+        Don't have an account? <a href="signup.html">Sign up</a>
+    </p>
+</div>
+
+<script src="js/login.js"></script>
+</body>
+</html>

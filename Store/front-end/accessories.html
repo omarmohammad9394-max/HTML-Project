@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Accessories – PrimeVault</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <!-- LEFT — LOGO -->
+    <a href="index.html" class="nav-logo">
+        <img src="images/Logo.png" alt="PrimeVault">
+    </a>
+
+    <!-- CENTER — LINKS -->
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+    </nav>
+
+    <!-- RIGHT — USER + CART -->
+    <div class="nav-right">
+
+        <!-- Username appears dynamically -->
+        <span id="nav-username" class="username"></span>
+
+        <!-- Login + Signup (hidden when logged in) -->
+        <div id="auth-buttons">
+            <a href="login.html" class="nav-btn">Login</a>
+            <a href="signup.html" class="nav-btn">Sign Up</a>
+        </div>
+
+        <!-- CART ICON -->
+        <div class="cart-icon" onclick="location.href='cart.html'">
+            <img src="images/Cart.png" alt="Cart">
+            <span id="cart-count">0</span>
+        </div>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    </div>
+
+</header>
+
+<!-- MOBILE DROPDOWN MENU -->
+<div id="mobileMenu" class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="login.html" id="mobile-login">Login</a>
+    <a href="signup.html" id="mobile-signup">Sign Up</a>
+</div>
+
+<div class="page-header">
+    <h1>Accessories</h1>
+    <p>Premium accessories to complete your look.</p>
+</div>
+
+<div class="products" id="accessoriesList"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
