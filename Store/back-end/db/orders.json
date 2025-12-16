@@ -1,0 +1,19 @@
+[
+
+  {
+    "id": "PV492874",
+    "cart": [
+      {
+        "name": "White Oversized T-Shirt",
+        "price": 299,
+        "qty": 1,
+        "img": "/back-end/product-images/shirt.jpg"
+      }
+    ],
+    "total": 299,
+    "date": "2025-12-16T09:37:41.932Z",
+    "cardHolder": "omar mohamed",
+    "cardLast4": "4545",
+    "paymentMethod": "Card"
+  }
+]

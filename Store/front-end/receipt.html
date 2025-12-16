@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Receipt – PrimeVault</title>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+body {
+    background: #f4f4f7;
+    font-family: Arial, sans-serif;
+}
+
+.receipt-container {
+    max-width: 750px;
+    background: #fff;
+    margin: 40px auto;
+    padding: 35px 45px;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
+
+.receipt-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.receipt-header img { width: 80px; }
+
+.receipt-title {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.receipt-section {
+    margin-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.receipt-section h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+.total-line {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-entry {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.item-entry img {
+    width: 55px;
+    height: 55px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.btn-black { background: #000; color: #fff; }
+.btn-orange { background: #ff7500; color: #fff; margin-left: 10px; }
+</style>
+
+</head>
+<body>
+
+<div class="receipt-container">
+
+    <div class="receipt-header">
+        <img src="images/Logo.png" alt="PrimeVault">
+        <div>
+            <div class="receipt-title">Order Receipt</div>
+            <small>Thank you for shopping with PrimeVault</small>
+        </div>
+    </div>
+
+    <div class="receipt-section">
+        <h3>Order Information</h3>
+        <p><strong>Order ID:</strong> <span id="r-id"></span></p>
+        <p><strong>Date:</strong> <span id="r-date"></span></p>
+    </div>
+
+    <div class="receipt-section">
+        <h3>Items</h3>
+        <div id="r-items"></div>
+
+        <div class="total-line">
+            <span>Total</span>
+            <span id="r-total"></span>
+        </div>
+    </div>
+
+    <div class="receipt-section">
+        <h3>Payment Info</h3>
+        <p><strong>Cardholder:</strong> <span id="r-holder"></span></p>
+        <p><strong>Card Ending:</strong> **** **** **** <span id="r-last4"></span></p>
+        <p><strong>Method:</strong> <span id="r-method"></span></p>
+    </div>
+
+    <a class="btn btn-black" href="index.html">Return Home</a>
+    <button class="btn btn-orange" onclick="window.print()">Print Receipt</button>
+
+</div>
+
+<script src="js/script.js"></script>
+<script>
+loadNavbar();
+
+// Retrieve saved order
+const order = JSON.parse(localStorage.getItem("lastOrder"));
+
+if (!order) {
+    document.querySelector(".receipt-container").innerHTML =
+        "<h2 style='text-align:center;'>No receipt data found</h2>";
+} else {
+    document.getElementById("r-id").textContent = order.id;
+    document.getElementById("r-date").textContent = new Date(order.date).toLocaleString();
+    document.getElementById("r-total").textContent = order.total + " EGP";
+    document.getElementById("r-holder").textContent = order.cardHolder;
+    document.getElementById("r-last4").textContent = order.cardLast4;
+    document.getElementById("r-method").textContent = order.paymentMethod;
+
+    const itemBox = document.getElementById("r-items");
+
+    order.cart.forEach(item => {
+        const row = document.createElement("div");
+        row.className = "item-row";
+        row.innerHTML = `
+            <div class="item-entry">
+                <img src="${item.img}">
+                <span>${item.qty} × ${item.name}</span>
+            </div>
+            <span>${item.price * item.qty} EGP</span>
+        `;
+        itemBox.appendChild(row);
+    });
+}
+</script>
+
+</body>
+</html>
